@@ -7,12 +7,12 @@ const initialState = [
     {
         title: "Learn Javascript",
         status: true,
-        id: 2
+        id: 1
     },
     {
         title: "Learn React",
         status: true,
-        id: 1
+        id: 2
     },
     {
         title: "Learn Angular",
@@ -22,7 +22,7 @@ const initialState = [
     {
         title: "Learn Python",
         status: false,
-        id: 2
+        id: 4
     },
 ]
 
