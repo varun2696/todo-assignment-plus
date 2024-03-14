@@ -6,8 +6,8 @@ export const TodoList = ({ title, status, handleToggle, handleDelete }) => {
             <tr>
                 <td>{title}</td>
                 <td>{status}</td>
-                <td><button onClick={handleToggle}>Toggle</button></td>
-                <td><button onClick={handleDelete}>Delete</button></td>
+                <td><button className="toggle-btn" onClick={handleToggle}>Toggle</button></td>
+                <td><button className="delete-btn" onClick={handleDelete}>Delete</button></td>
             </tr>
         </>
     )

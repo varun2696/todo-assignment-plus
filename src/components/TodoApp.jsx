@@ -5,20 +5,25 @@ import { TodoList } from "./TodoList";
 
 const initialState = [
     {
-        title: "Learn React",
-        status: true,
-        id: 1
-    },
-    {
         title: "Learn Javascript",
         status: true,
         id: 2
     },
     {
+        title: "Learn React",
+        status: true,
+        id: 1
+    },
+    {
         title: "Learn Angular",
         status: false,
         id: 3
-    }
+    },
+    {
+        title: "Learn Python",
+        status: false,
+        id: 2
+    },
 ]
 
 export const TodoApp = () => {
@@ -47,7 +52,7 @@ export const TodoApp = () => {
     }
     return (
         <>
-            <div>
+            <div className="todo-app">
                 <h1>Todo Application</h1>
                 <TodoForm addTask={addTask} />
                 <table>

@@ -6,9 +6,15 @@ export const TodoForm = ({ addTask }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        addTask(task);
-        setTask("")
+        if (task !== "") {
+            addTask(task);
+            setTask("")
+        }
+        else {
+            alert("Please add the task")
+        }
     }
+
     return (
         <form onSubmit={handleSubmit}>
             <input
